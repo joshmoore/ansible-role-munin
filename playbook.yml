@@ -1,0 +1,32 @@
+---
+# An instance that monitors itself
+# This tests the munin and munin-node roles
+- hosts: all
+
+  pre_tasks:
+  - debug: var=hostvars
+  - name: Setup EPEL
+    yum:
+      pkg: epel-release
+      state: present
+
+  roles:
+  - role: openmicroscopy.munin-node
+  - role: ansible-role-munin
+    munin_hosts:
+    - name: "{{ ansible_hostname }}"
+      address: "127.0.0.1"
+
+  post_tasks:
+  - name: Install httpd
+    become: yes
+    yum:
+      name: httpd
+      state: present
+
+  - name: Start httpd
+    become: yes
+    service:
+      enabled: yes
+      name: httpd
+      state: started
