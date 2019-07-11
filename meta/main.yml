@@ -17,6 +17,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
       - all
+  role_name: munin
   galaxy_tags:
     - monitoring
     - system

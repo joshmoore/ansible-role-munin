@@ -11,7 +11,7 @@
       state: present
 
   roles:
-  - role: openmicroscopy.munin-node
+  - role: ome.munin_node
   - role: ansible-role-munin
     munin_hosts:
     - name: "{{ ansible_hostname }}"

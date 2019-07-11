@@ -1,6 +1,7 @@
 # Ansible Role: Munin
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-munin.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-munin)
+[![Build Status](https://travis-ci.org/ome/ansible-role-munin.svg)](https://travis-ci.org/ome/ansible-role-munin)
+[![Ansible Role](https://img.shields.io/ansible/role/41995.svg)](https://galaxy.ansible.com/ome/munin/)
 
 Installs munin, a monitoring system, on RedHat/CentOS or Debian/Ubuntu Linux servers.
 
@@ -84,12 +85,12 @@ None.
     # Simple example
     - hosts: servers
       roles:
-      - munin
+      - ome.munin
 
     # Slack notifications, multiple monitored servers
     - hosts: servers
       roles:
-      - munin
+      - ome.munin
         munin_slack_token: xoxp-SLACK-TOKEN
         munin_slack_channel: "#alerts"
         munin_hosts:
