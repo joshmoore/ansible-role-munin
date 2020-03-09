@@ -55,7 +55,7 @@ munin_slack_username: ""
 # Display emoji icon for slack notifications
 munin_slack_emoji: ""
 # True: Alert on every check False: alert once
-munin_slack_always_alert: False
+munin_slack_always_alert: false
 # Text used to prefix notifications (not parsed)
 munin_slack_alert: "Munin alert"
 # URL in notification
