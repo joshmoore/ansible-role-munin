@@ -50,6 +50,7 @@
   lineinfile:
     dest: /etc/cron.d/munin
     state: "{{ munin_cron_job }}"
+    create: true
     regexp: "^\\*/5 \\* \\* \\* \\*"
     line: >-
       */5 * * * *     munin test -x /usr/bin/munin-cron && /usr/bin/munin-cron
