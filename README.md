@@ -1,6 +1,6 @@
 # Ansible Role: Munin
 
-[![Build Status](https://travis-ci.org/ome/ansible-role-munin.svg)](https://travis-ci.org/ome/ansible-role-munin)
+[![Actions Status](https://github.com/ome/ansible-role-munin/workflows/Molecule/badge.svg)](https://github.com/ome/ansible-role-munin/actions)
 [![Ansible Role](https://img.shields.io/ansible/role/41996.svg)](https://galaxy.ansible.com/ome/munin/)
 
 Installs munin, a monitoring system, on RedHat/CentOS or Debian/Ubuntu Linux servers.
